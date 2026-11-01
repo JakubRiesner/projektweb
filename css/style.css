@@ -1,0 +1,162 @@
+body {
+    max-width: 750px;
+    margin: auto;
+    background-color: #faf5ee;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+p {
+    padding: 20px 25px;
+    text-align: justify;
+}
+
+img {
+    border-radius: 15px;
+    width: 180px;
+    transition: 1s;
+}
+
+img:hover {
+    width: 190px;
+    transition: 1s;
+}
+
+.tmavy {
+    background-color: #2b1a12;
+    color: white;
+    border-radius: 15px;
+    min-height: 160px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.svetly {
+    background-color: #f1dcc3;
+    color: black;
+    border-radius: 15px;
+    min-height: 160px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.galerie {
+    text-align: center;
+}
+
+.galerie img {
+    width: 750px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin: 5px;
+}
+
+
+
+.maly {
+    width: 220px;
+}
+
+.maly:hover {
+    width: 228px;
+}
+
+.clen {
+    min-height: 280px;
+}
+
+.vpravo {
+    float: right;
+    margin: 12px;
+}
+
+.vlevo {
+    float: left;
+    margin: 15px;
+}
+
+#nazev {
+    text-align: center;
+    color: darkred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#podnazev {
+    text-align: center;
+    margin-top: -10px;
+}
+
+#nav {
+    border: 2px solid black;
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+    background-color: rgb(220, 207, 207);
+    position: sticky;
+    top: 0;
+}
+
+#nav a {
+    background-color: rgb(210, 161, 161);
+    padding: 6px;
+    border-radius: 2px;
+    text-decoration: none;
+    border: 2px rgb(0, 0, 0) solid;
+    transition: 0.5s;
+    color: black;
+}
+
+#nav a:hover {
+    background-color: rgb(161, 210, 204);
+}
+
+h2 {
+    padding-left: 25px;
+}
+
+.cena {
+    font-weight: bold;
+}
+
+table {
+    margin: 0 25px;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid grey;
+    padding: 6px 12px;
+}
+
+iframe {
+    border: none;
+    max-width: 100%;
+}
+
+#footer-text {
+    font-size: 10px;
+    color: grey;
+    padding: 3px;
+}
+
+
+@media (max-width: 600px) {
+    #nav {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+
+    .vpravo, .vlevo {
+        float: none;
+        display: block;
+        margin: 12px auto;
+    }
+
+    p {
+        padding: 10px 15px;
+    }
+
+    .galerie img, .galerie img:hover {
+        width: 90%;
+    }
+}
